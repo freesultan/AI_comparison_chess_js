@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chess Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Chess Game</h1>
+        
+        <div class="game-info">
+            <div id="status">White to move</div>
+            <button id="reset-btn">New Game</button>
+        </div>
+        
+        <div class="board-container">
+            <div id="coordinates-top" class="coordinates"></div>
+            <div class="board-wrapper">
+                <div id="coordinates-left" class="coordinates"></div>
+                <div id="chessboard"></div>
+                <div id="coordinates-right" class="coordinates"></div>
+            </div>
+            <div id="coordinates-bottom" class="coordinates"></div>
+        </div>
+        
+        <div id="promotion-modal" class="modal">
+            <div class="modal-content">
+                <h3>Promote Pawn</h3>
+                <div class="promotion-pieces">
+                    <div class="promotion-piece" data-piece="queen">♛</div>
+                    <div class="promotion-piece" data-piece="rook">♜</div>
+                    <div class="promotion-piece" data-piece="bishop">♝</div>
+                    <div class="promotion-piece" data-piece="knight">♞</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
